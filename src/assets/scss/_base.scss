@@ -88,8 +88,9 @@ a {
         width: max-content;
         padding: 6px;
     }
+
     @include sm {
-        width:100%;
+        width: 100%;
         max-width: max-content;
         padding: 6px;
     }
@@ -104,6 +105,10 @@ a {
         justify-content: space-between;
         gap: 10px;
 
+        @include sm {
+            padding: 10px;
+        }
+
         .tokentxt {
             color: #161616;
             text-align: center;
@@ -116,7 +121,15 @@ a {
             text-transform: capitalize;
             margin-top: 0;
             word-break: break-all;
-            text-align: left
+            text-align: left;
+
+            @include sm {
+                font-size: 13px;
+            }
+
+            @include ssm {
+                font-size: 12px;
+            }
         }
 
         button {
@@ -136,7 +149,16 @@ a {
         }
     }
 }
-
+.marquee-area{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    .brnshap{
+        width: 100%;
+        margin-bottom: -12px;
+    }
+}
 .common {
     &-marquee {
         border: 2px solid #1581E0;
