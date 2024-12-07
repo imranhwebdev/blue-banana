@@ -19,7 +19,7 @@
         height: 100vh;
     }
 
-    &-container {
+    & .container {
         height: 100%;
     }
 
@@ -55,6 +55,7 @@
 
             @include ssm {
                 font-size: 30px;
+                margin-top: -100px;
             }
 
             span {
