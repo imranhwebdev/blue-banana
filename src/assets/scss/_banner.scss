@@ -1,0 +1,106 @@
+.banner {
+    position: relative;
+    z-index: 1;
+    background-image: url('../img/bannerbg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top center;
+    padding-top: 260px;
+    padding-bottom: 347px;
+
+    @include sm {
+        padding-top: 130px;
+        padding-bottom: 180px;
+    }
+
+    @include ssm {
+        padding-top: 110px;
+        padding-bottom: 100px;
+    }
+
+    .brnshap {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            color: #36AAFF;
+            text-align: center;
+            text-shadow: 0.729px 4.375px 0px #000;
+            -webkit-text-stroke-width: 1.7078431844711304px;
+            -webkit-text-stroke-color: #000;
+            font-family: "Comic Sans MS";
+            font-size: 76.853px;
+            font-weight: 700;
+            line-height: 100%;
+            text-transform: uppercase;
+
+            @include md {
+                font-size: 60px;
+            }
+
+            @include sm {
+                font-size: 40px;
+                line-height: 130%;
+            }
+
+            span {
+                display: block;
+                color: #36AAFF;
+                text-align: center;
+                text-shadow: 0.78px 4.679px 0px #000;
+                -webkit-text-stroke-width: 1.8265682458877563px;
+                -webkit-text-stroke-color: #000;
+                font-size: 82.196px;
+                font-weight: 700;
+                line-height: 100%;
+                text-transform: uppercase;
+                padding-block: 32px;
+
+                @include md {
+                    font-size: 60px;
+                    padding-block: 25px;
+                }
+
+                @include sm {
+                    font-size: 40px;
+                    padding-block: 5px;
+                }
+
+            }
+        }
+
+        p {
+            color: #000;
+            text-align: center;
+            font-family: "Michroma";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: 0.48px;
+            max-width: 870px;
+            margin-inline: auto;
+
+            @include md {
+                font-size: 18px;
+                max-width: 700px;
+            }
+
+            @include sm {
+                font-size: 16px;
+                max-width: 500px;
+                margin-top: 15px;
+            }
+        }
+    }
+}

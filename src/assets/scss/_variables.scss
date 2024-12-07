@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+@font-face {
+    font-family: "ComicSansMS3";
+    src: url('/src/assets/fonts/ComicSansMS3.ttf');
+}
+
+@font-face {
+    font-family: "Milk-Kids";
+    src: url('/src/assets/fonts/Milk-Kids.ttf');
+}
+
+$font-1: 'ComicSansMS3', sans-serif;
+$font-2: 'Milk-Kids', sans-serif;
+$font-3: "Michroma", serif;
+$white: #fff;
+$black: #000;
+$bg: #9AD5FF;
+
+:root {
+    scroll-behavior: auto !important;
+}

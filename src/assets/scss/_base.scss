@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+    font-family: $font-3;
+    background-color: $bg;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-1;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none !important;
+    @include transition;
+    display: inline-block;
+}
+
+// social 
+.social {
+    &-link {
+        --width: 56px;
+        width: var(--width);
+        height: var(--width);
+        border-radius: 6px;
+        color: $black;
+        font-size: 24px;
+        background-color: #00C2FD;
+        box-shadow: 2.672px 2.672px 0px 0px rgba(0, 0, 0, 0.30), 2.672px 2.672px 0px 1.781px rgba(255, 255, 255, 0.28) inset;
+
+        &:hover {
+            box-shadow: 0 0 0;
+        }
+
+        @include sm {
+            --width: 38px;
+
+            & svg {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+}
+
+#root {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1220px;
+    padding-inline: 15px;
+    margin-inline: auto;
+}
+
+.token {
+    border-radius: 12px;
+    border: 1.599px solid #000;
+    background: #5DB7FF;
+    padding: 19px;
+    margin-top: 30px;
+
+    @include md {
+        width: max-content;
+        padding: 6px;
+    }
+    @include sm {
+        width:100%;
+        max-width: max-content;
+        padding: 6px;
+    }
+
+    &-wrap {
+        border-radius: 10px;
+        border: 1.599px solid #000;
+        background: #9CD6FF;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+
+        .tokentxt {
+            color: #161616;
+            text-align: center;
+            font-family: $font-2;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.64px;
+            text-transform: capitalize;
+            margin-top: 0;
+            word-break: break-all;
+            text-align: left
+        }
+
+        button {
+            @include font-24;
+            color: $black;
+            background: transparent;
+            border: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: all .3s;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}
+
+.common {
+    &-marquee {
+        border: 2px solid #1581E0;
+        background: #A4D9FF;
+        padding-top: 12px;
+        padding-bottom: 8px;
+
+        .single-item {
+            margin-right: 32px;
+        }
+    }
+}

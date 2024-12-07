@@ -1,0 +1,102 @@
+@keyframes headerAnimation {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.heading {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: transparent;
+
+    @include md {
+        top: 30px;
+    }
+
+    @include sm {
+        top: 20px;
+    }
+
+    &.position-fixed {
+        position: fixed;
+        animation: headerAnimation .5s linear;
+        backdrop-filter: blur(3px);
+        --navbar-padding-y: 0px;
+
+        @include md {
+            --navbar-padding-y: 0px;
+        }
+
+        @include sm {
+            --navbar-padding-y: 0;
+        }
+    }
+
+    .heading-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .site-logo {
+            color: #36AAFF;
+            -webkit-text-stroke-width: 1.6263023614883423px;
+            -webkit-text-stroke-color: #000;
+            font-family: "Comic Sans MS";
+            font-size: 39.328px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+
+            @include sm {
+                font-size: 25px;
+                -webkit-text-stroke-width: 1px;
+            }
+        }
+
+        .social-list {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            list-style: none;
+            gap: 15px;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 9.564px;
+                border: 1.195px solid #000;
+                background: #0564BE;
+                box-shadow: 1.95px 1.95px 0px 0px #000;
+                color: $white;
+                font-size: 28px;
+
+                @include sm {
+                    border-radius: 4px;
+                }
+
+                img {
+                    max-width: 28px;
+
+                    @include sm {
+                        max-width: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
