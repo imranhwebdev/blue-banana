@@ -6,16 +6,16 @@
     background-size: 100% 100%;
     background-position: top center;
     padding-top: 260px;
-    padding-bottom: 347px;
+    padding-bottom: 130px;
 
     @include sm {
         padding-top: 130px;
-        padding-bottom: 180px;
+        padding-bottom: 100px;
     }
 
     @include ssm {
         padding-top: 110px;
-        padding-bottom: 100px;
+        padding-bottom: 0px;
         height: 100vh;
     }
 
@@ -112,6 +112,20 @@
                 font-size: 16px;
                 max-width: 500px;
                 margin-top: 15px;
+            }
+        }
+
+        img {
+            max-width: 550px;
+            margin-inline: auto;
+            margin-top: 20px;
+
+            @include mmd {
+                max-width: 400px;
+            }
+
+            @include sm {
+                max-width: 300px;
             }
         }
     }
