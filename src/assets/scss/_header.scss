@@ -63,6 +63,10 @@
                 font-size: 25px;
                 -webkit-text-stroke-width: 1px;
             }
+
+            @include ssm {
+                font-size: 22px;
+            }
         }
 
         .social-list {
