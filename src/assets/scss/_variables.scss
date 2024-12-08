@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://db.onlinewebfonts.com/c/7cc6719bd5f0310be3150ba33418e72e?family=Comic+Sans+MS');
 
 @font-face {
-    font-family: "ComicSansMS3";
-    src: url('/src/assets/fonts/ComicSansMS3.ttf');
+    font-family: "ComicSansMS";
+    src: url('/src/assets/fonts/Comic-Sans-MS.ttf');
+}
+
+@font-face {
+    font-family: "ComicSansMSbold";
+    src: url('/src/assets/fonts/comicsansmsbold.ttf');
 }
 
 @font-face {
@@ -10,7 +16,7 @@
     src: url('/src/assets/fonts/Milk-Kids.ttf');
 }
 
-$font-1: 'ComicSansMS3', sans-serif;
+$font-1: "Comic Sans MS";
 $font-2: 'Milk-Kids', sans-serif;
 $font-3: "Michroma", serif;
 $white: #fff;
