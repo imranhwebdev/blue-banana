@@ -18,7 +18,9 @@ export default function Banner() {
           <h1>UNPEEL THE FUTURE: <span>IT'S BLUE BANANA!</span></h1>
           <p>This is a rare blue banana. Hodl and you’ll become a bananillionaire. Ignore, and you’ll fail forever.</p>
           <Token />
-          <img src={banana} alt="" />
+          <div className="banana">
+            <img src={banana} alt="" />
+          </div>
         </div>
       </div>
       <PageMarquee />

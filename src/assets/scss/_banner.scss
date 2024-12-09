@@ -1,7 +1,7 @@
 .banner {
     position: relative;
     z-index: 1;
-    background-image: url('../img/bannerbg.png');
+    background-image: url('../img/bannerbg.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: top center;
@@ -59,11 +59,11 @@
                 line-height: 130%;
                 -webkit-text-stroke-width: 1px;
                 text-shadow: 0.5px 2px 0px #000;
+                margin-top: auto;
             }
 
             @include ssm {
                 font-size: 26px;
-                margin-top: -100px;
             }
 
             span {
@@ -121,10 +121,44 @@
             }
         }
 
+        .banana {
+            position: relative;
+            z-index: 1;
+
+            @include sm {
+                margin-top: auto;
+            }
+
+            @include ssm {
+                margin-bottom: 100px;
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -17px;
+                width: 50%;
+                height: 254px;
+                background-image: url('../img/bananashap.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: bottom center;
+                z-index: -1;
+
+                @include sm {
+                    bottom: -10px;
+                }
+            }
+        }
+
         img {
             max-width: 550px;
             margin-inline: auto;
             margin-top: 20px;
+            position: relative;
+            z-index: 1;
 
             @include mmd {
                 max-width: 400px;
