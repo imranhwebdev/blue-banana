@@ -42,7 +42,7 @@
             color: #36AAFF;
             text-align: center;
             text-shadow: 0.729px 4.375px 0px #000;
-            -webkit-text-stroke-width: 0.01px;
+            -webkit-text-stroke-width: 1.7078431844711304px;
             -webkit-text-stroke-color: #000;
             font-family: $font-1;
             font-size: 76.853px;
@@ -55,9 +55,9 @@
             }
 
             @include sm {
-                font-size: 40px;
+                font-size: 35px;
                 line-height: 130%;
-                -webkit-text-stroke-width: 0.1px;
+                -webkit-text-stroke-width: 1px;
                 text-shadow: 0.5px 2px 0px #000;
             }
 
@@ -71,7 +71,7 @@
                 color: #36AAFF;
                 text-align: center;
                 text-shadow: 0.78px 4.679px 0px #000;
-                -webkit-text-stroke-width: 0.01px;
+                -webkit-text-stroke-width: 1.7078431844711304px;
                 -webkit-text-stroke-color: #000;
                 font-size: 82.196px;
                 font-weight: 700;
@@ -85,10 +85,10 @@
                 }
 
                 @include sm {
-                    font-size: 40px;
+                    font-size: 35px;
                     padding-block: 5px;
                     line-height: 130%;
-                    -webkit-text-stroke-width: 0.1px;
+                    -webkit-text-stroke-width: 1px;
                     text-shadow: 0.5px 2px 0px #000;
                 }
 
