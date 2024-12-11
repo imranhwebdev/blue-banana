@@ -5,8 +5,9 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: top center;
-    padding-top: 260px;
+    padding-top: 180px;
     padding-bottom: 130px;
+    height: 100vh;
 
     @include sm {
         padding-top: 130px;
