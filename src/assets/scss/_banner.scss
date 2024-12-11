@@ -13,6 +13,10 @@
         padding-bottom: 100px;
     }
 
+    @media(max-width:1920px) {
+        height: 100vh;
+    }
+
     @include ssm {
         padding-top: 110px;
         padding-bottom: 0px;

@@ -7,17 +7,17 @@ export default function Social({ className }) {
     {
       name: 'twitter',
       icon: <FaXTwitter />,
-      url: '/'
+      url: 'https://x.com/bluebananaonsol'
     },
     {
       name: 'telegram',
       icon: <LiaTelegramPlane />,
-      url: '/'
+      url: 'https://t.me/bluebananasol'
     },
     {
       name: 'dexicon',
       icon: <img src={dexicon} alt="Dexicon" className="w-6 h-6" />,
-      url: '/'
+      url: 'https://dexscreener.com/solana/beg9q7chfyj6nk1rhqffjpycmadxumzsz1y8sb8emkad'
     },
   ];
 
