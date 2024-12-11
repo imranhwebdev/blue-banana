@@ -20,8 +20,12 @@
     z-index: 9999;
     background-color: transparent;
 
-    @include md {
+    @include lg {
         top: 30px;
+    }
+
+    @include md {
+        top: 25px;
     }
 
     @include sm {
